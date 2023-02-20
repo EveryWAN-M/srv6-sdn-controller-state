@@ -25,7 +25,7 @@ setup(
     url='',  # Optional
     packages=['srv6_sdn_controller_state'],  # Required
     install_requires=[
-        'setuptools',
+        'setuptools>=41.2.0',
         'pymongo'
     ]
 )
