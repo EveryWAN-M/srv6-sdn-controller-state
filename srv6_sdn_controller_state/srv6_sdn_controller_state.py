@@ -17,7 +17,8 @@ import itertools
 # Global variables
 # DEFAULT_MONGODB_HOST = '0.0.0.0'
 # DEFAULT_MONGODB_HOST = '160.80.105.253'
-DEFAULT_MONGODB_HOST = os.environ.get('MONGODB_HOST', '2000:0:25:24::2')
+#mongodb running in docker container with ip 10.10.10.10
+DEFAULT_MONGODB_HOST = os.environ.get('MONGODB_HOST', '10.10.10.10')
 DEFAULT_MONGODB_PORT = int(os.environ.get('MONGODB_PORT', 27017))
 DEFAULT_MONGODB_USERNAME = os.environ.get('MONGODB_USERNAME', 'root')
 DEFAULT_MONGODB_PASSWORD = os.environ.get('MONGODB_PASSWORD', '12345678')
